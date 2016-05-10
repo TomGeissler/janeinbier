@@ -17,7 +17,9 @@
 				var goTo = "http://www.dresdner-nachtwanderung.de";
 				icon.animate({height: (icon.height()*1.5),width: (icon.width()*1.5)},800, "easeOutElastic");
 
-				setTimeout(function(){		
+				setTimeout(function(){	
+					flag = true;
+					icon.animate({height: (icon.height()/1.5),width: (icon.width()/1.5)},800, "easeOutElastic");
 					if(icon.attr('id') == "0") goTo = "http://www.dresdner-studententage.de/2016/veranstaltungen"
 					if(icon.attr('id') == "1") goTo = "http://www.vdsc.de"
          			window.location = goTo;
